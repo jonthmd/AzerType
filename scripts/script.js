@@ -1,5 +1,7 @@
 function afficherResultat(score, nbTotalMots) {
-    console.log("Votre score est de " + score + " / " + nbTotalMots + " !")
+    let message = `${score} / ${nbTotalMots}`
+    let spanZoneScore = document.querySelector(".zoneScore Span")
+    spanZoneScore.innerText = message
 }
 
 function choisirPhrasesOuMots() {
@@ -36,4 +38,23 @@ function lancerJeu() {
     }
 
     afficherResultat(score, nbTotalMots)
+}
+
+
+let inputEcriture = document.getElementById("inputEcriture")
+console.log(inputEcriture)
+
+let btnValiderMot = document.getElementById("btnValiderMot")
+console.log(btnValiderMot)
+
+let divZoneProposition = document.querySelector(".zoneProposition")
+console.log(divZoneProposition)
+
+let spanZoneScore = document.querySelector(".zoneScore Span")
+console.log(spanZoneScore)
+
+let listeBtnRadio = document.querySelectorAll(".zoneOptions input")
+console.log(listeBtnRadio)
+for(let i = 0; i < listeBtnRadio.length; i++) {
+    console.log(listeBtnRadio[i])
 }

@@ -27,6 +27,7 @@ function choisirPhrasesOuMots() {
 // }
 
 function lancerJeu() {
+    initAddEventListenerPopup()
     let score = 0
     // let nbTotalMots = 0
     let i = 0
@@ -81,7 +82,6 @@ function afficherProposition(proposition) {
     let zoneProposition = document.querySelector(".zoneProposition")
     zoneProposition.innerText = proposition
 }
-
 
 // let inputEcriture = document.getElementById("inputEcriture")
 // console.log(inputEcriture)
